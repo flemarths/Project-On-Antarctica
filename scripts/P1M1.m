@@ -16,16 +16,17 @@ clc ;
 % l'execution du script
 % 
 
-DossierTravail = '/home/arthur/Documents/ENSISA/2324/ProjectOnAntarctica';
+CheminTemperature= '/home/arthur/Documents/ENSISA/2324/Project-On-Antarctica/ressources/ENDURANCE_temperature.mat';
 
-T = load("ENDURANCE_temperature.mat")  ;              %importation des données
-[tmax,jmax] = max(T.temperature);                 %recherche de la température maximale et du jour correspondant
-[tmin,jmin] = min(T.temperature) ;                %recherche de la température minimale et du jour correspondant
-[z,jz] = min(abs(T.temperature)) ;             %recherche de la température la plus proche de zéro et du jour correspondant
 
 %%
 %********** Acquisition/Generation des signaux ****
 % Dans cette zone sont declares TOUS les signaux autres que les constantes
+
+T = load(CheminTemperature)  ;              %importation des données
+[tmax,jmax] = max(T.temperature);                 %recherche de la température maximale et du jour correspondant
+[tmin,jmin] = min(T.temperature) ;                %recherche de la température minimale et du jour correspondant
+[z,jz] = min(abs(T.temperature)) ;             %recherche de la température la plus proche de zéro et du jour correspondant
 
 
 %%

@@ -18,8 +18,8 @@ clc;
 % l'execution du script
 % 
 
-CheminFussak='ENDURANCE_carto_fussak.mat' ;
-CheminManchot='ENDURANCE_carto_manchot.mat';
+CheminFussak='/home/arthur/Documents/ENSISA/2324/Project-On-Antarctica/ressources/ENDURANCE_carto_fussak.mat' ;
+CheminManchot='/home/arthur/Documents/ENSISA/2324/Project-On-Antarctica/ressources/ENDURANCE_carto_manchot.mat';
 
 %%
 %********** Acquisition/Generation des signaux ****
