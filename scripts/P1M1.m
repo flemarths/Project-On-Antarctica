@@ -54,9 +54,9 @@ end
 % Cette zone permet de regrouper toutes les instructions relatives au trace
 % des courbes
 
-display("la température maximale est "+tmax+" et elle a été atteinte au jour "+jmax)
-display("la température minimale est "+tmin+" et elle a été atteinte au jour "+jmin)
-display("la température la plus proche de zéro est "+z+" et elle a été atteinte au jour "+jz)
+disp("la température maximale est "+tmax+" et elle a été atteinte au jour "+jmax)
+disp("la température minimale est "+tmin+" et elle a été atteinte au jour "+jmin)
+disp("la température la plus proche de zéro est "+z+" et elle a été atteinte au jour "+jz)
 
 plot(T.temps,T.temperature,'-o','LineWidth',2) ; %affichage de la température en fonction du temps
 hold on;
