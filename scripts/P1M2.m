@@ -18,10 +18,8 @@ clc;
 % l'execution du script
 % 
 
-CheminFussak="C:\Users\arths\Documents\ENSISA\Project-On-Antarctica\ressou" + ...
-    "rces\ENDURANCE_carto_fussak.mat" ;
-CheminManchot="C:\Users\arths\Documents\ENSISA\Project-On-Antarctica\resso" + ...
-    "urces\ENDURANCE_carto_manchot.mat";
+CheminFussak="/home/arthur/Documents/ENSISA/2324/Project-On-Antarctica/ressources/ENDURANCE_carto_fussak.mat" ;
+CheminManchot="/home/arthur/Documents/ENSISA/2324/Project-On-Antarctica/ressources/ENDURANCE_carto_manchot.mat";
 
 ListeNomEspeces= ["Manchot Empereur","Manchot Adélie","Manchot Papou",
     "Manchot Royal","Manchot à Jugulaire","Gorfou Doré"];
