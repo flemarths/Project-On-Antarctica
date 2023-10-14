@@ -16,7 +16,7 @@ clc ;
 % l'execution du script
 % 
 
-CheminTemperature= 'C:\Users\arths\Documents\ENSISA\Project On Antarctica\ressources\ENDURANCE_temperature.mat';
+CheminTemperature= '/home/arthur/Documents/ENSISA/2324/Project-On-Antarctica/ressources/ENDURANCE_temperature.mat';
 
 
 %%
@@ -56,7 +56,7 @@ end
 
 display("la température maximale est "+tmax+" et elle a été atteinte au jour "+jmax)
 display("la température minimale est "+tmin+" et elle a été atteinte au jour "+jmin)
-display("la température la plus proche de zéro est "+z+" et elle a été atteinte au jour " + jz)
+display("la température la plus proche de zéro est "+z+" et elle a été atteinte au jour "+jz)
 
 plot(T.temps,T.temperature,'-o','LineWidth',2) ; %affichage de la température en fonction du temps
 hold on;
