@@ -14,7 +14,7 @@ clc;
 
 % %
 % ********** Declaration des constantes ************
-% Dans cette zone sont initialisees TOUTES les constantes necessaires a
+% Dans cette zone sont initialis>> ees TOUTES les constantes necessaires a
 % l'execution du script
 % 
 
