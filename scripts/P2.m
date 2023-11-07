@@ -114,7 +114,7 @@ end
 % des courbes
 
 
-figure('Name','trajectoire non interpolée')
+figure(1)
 plot(Xgps,Ygps)
 xlabel('position en X')
 ylabel('position en Y')
@@ -124,14 +124,14 @@ legend('trajectoire')
 
 
 
-figure('Name','Evolution de la résolution')
+figure(2)
 plot(Tgps(1:end-1),Resolution)
 xlabel('temps en secondes')
 ylabel('resolution')
 title("évolution de la résolution au cours du temps")
 legend('résolution')
 
-figure('Name','identification des parties fiables de la trajectoire')
+figure(3)
 scatter(GpsOk(:,1),GpsOk(:,2),'green','filled');
 hold on;
 scatter(GpsNo(:,1),GpsNo(:,2),'red','filled');
@@ -145,7 +145,7 @@ fprintf('la distance totale parcourue est de %f mètres\n',Dtot);
 
 fprintf("le biais est de %f\n",biais);
 
-figure('name','vitesse de lacet au cours du temps')
+figure(4)
 hold on;
 plot(Tcapt,PsipC,'k');
 plot(Tcapt,Psip,'r');
@@ -154,7 +154,7 @@ ylabel('vitesse de lacet (rad/s)')
 title("évolution de la vitesse de lacet au cours du temps")
 legend('signal compensé','signal biaisé')
 
-figure('name','évolution du cap au cours du temps')
+figure(5)
 hold on;
 plot(Tcapt,Psi,'r');
 plot(Tcapt,PsiC,'k');
@@ -163,7 +163,7 @@ ylabel('cap psi (rad)')
 title('évolution du cap au cours du temps')
 legend('signal biaisé','signal compensé')
 
-figure('name','trajectoire Gps vs Capt')
+figure(6)
 hold on;
 plot(Xgps,Ygps,'LineWidth',2);
 plot(XCapt,YCapt,'LineWidth',2);
@@ -172,7 +172,7 @@ ylabel('position selon y')
 title('comparatif des trajectoires Gps et Capteur')
 legend('trajectoire Gps','trajectoire Capteur (non biaisée)')
 
-figure('name','trajectoire corrigée')
+figure(7)
 plot(X(1,:),X(2,:))
 xlabel('position selon x')
 ylabel('position selon y')

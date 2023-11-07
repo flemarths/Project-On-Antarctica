@@ -21,8 +21,7 @@ clc;
 CheminFussak="/home/arthur/Documents/ENSISA/2324/Project-On-Antarctica/ressources/ENDURANCE_carto_fussak.mat" ;
 CheminManchot="/home/arthur/Documents/ENSISA/2324/Project-On-Antarctica/ressources/ENDURANCE_carto_manchot.mat";
 
-ListeNomEspeces= ["Manchot Empereur","Manchot Adélie","Manchot Papou",
-    "Manchot Royal","Manchot à Jugulaire","Gorfou Doré"];
+ListeNomEspeces= ["Manchot Empereur","Manchot Adélie","Manchot Papou","Manchot Royal","Manchot à Jugulaire","Gorfou Doré"];
 
 optn = ["xk","xb","xr","+m","og","or"];
 
@@ -92,7 +91,7 @@ ListeCMaxMin =[CEmax CEmin ; CAmax CAmin ; CPmax CPmin ;CRmax CRmin; CJmax CJmin
 % Cette zone permet de regrouper toutes les instructions relatives au trace
 % des courbes
 
-figure ('Name',' Toutes les espèces')
+figure (1)
 for i = 1:6
     [x,y] = find(carto_manchot==i);
     x = 13 - x ;
@@ -109,7 +108,7 @@ disp("les coordonnées (x,y) des gourfous dorés sont : ")
 disp([xG,yG])
 
 
-figure ('Name',' Chaque espèce séparément')
+figure (2)
 for i = 1:6
     incr = 14*(i-1);
     [x1,y1]=find(ListeManchots(:,1+incr:14+incr)==1);
@@ -132,7 +131,7 @@ hL = legend("espèce présente","espèce absente");
 hL.Position(1:2) = axPos(1:2);
 hold off;
 
-figure ('Name',' Corrélation des espèces')
+figure (3)
 for i = 1:6
     incr = 14*(i-1);
     subplot(3,2,i)

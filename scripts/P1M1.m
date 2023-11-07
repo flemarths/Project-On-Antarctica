@@ -1,4 +1,4 @@
-% TP1.m : Premier TD de l'année basé sur Phase_1_Antarctica.pdf
+% P1M1.m : Premier TD de l'année basé sur Phase_1_Antarctica.pdf
 % 
 % 
 % TP matlab - Phase 1 Mission 1
@@ -67,6 +67,7 @@ legend("temperatures non corrigées","temperatures avec bruit","temperatures avec
 xlabel("Temps (jours)")
 ylabel("Température (°)")
 title("Evolution de la température au cours du temps")
+%fontsize(gca,20,"pixels")
 hold off;
 
 display("le capteur à accumulé "+SommeTemp+"° en valeur absolue, il n'est donc plus fonctionel")
